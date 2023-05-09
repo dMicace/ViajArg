@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajArg</title>
+    <link rel="icon" href="imagenes/logo/logoico.ico">
+    <!--Fuentes de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&family=Suwannaphum&display=swap"
+        rel="stylesheet">
+    <!--Fuente de Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/f3d9777f93.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <!----> <img src="imagenes/logo/logo.png" alt="Logo de la marca">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li> <a class="Active" href="#">Menú <br>principal </a></li>
+                <li> <a href="">Región<br /> Noroeste </a></li>
+                <li> <a href="">Región<br> Nordeste </a></li>
+                <li> <a href="">Región <br>Pampeana </a></li>
+                <li> <a href="">Región de<br> Cuyo </a></li>
+                <li> <a href="">Región<br> Patagónica </a></li>
+            </ul>
+        </nav>
+
+        <!----> <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <!---->
+        <div id="mobile-menu" class="overlay">
+            <!----> <a onclick="closeNav()" href="" class="close">&times;</a>
+            <!---->
+            <div class="overlay-content">
+                <!----> <a class="Active" href="#">Menú principal </a>
+                <a href="">Región Noroeste </a>
+                <a href="">Región Nordeste </a>
+                <a href="">Región Pampeana </a>
+                <a href="">Región de Cuyo </a>
+                <a href="">Región Patagónica </a>
+                <!---->
+            </div>
+            <!---->
+        </div>
+
+    </header>
+    <!--  Carrusel de imágenes  -->
+
+<div class="carrusel">
+    <div id="imagen_carrusel">
+        <button id="retroceder">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button id="avanzar">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+    </div>
+</div>
+
+    <!-- Comienza el texto -->
+    <section>
+        <h1 id="titulo_region">Cuyo</h1>
+        <p>
+           La región de Cuyo está compuesta por tres provincias: Mendoza, San Juan y San Luis, y cada una de ellas cuenta con su propia belleza
+           natural y cultura única.
+            <br>
+           Mendoza, por ejemplo, es conocida por sus impresionantes viñedos y bodegas, que producen algunos de los mejores vinos
+           del mundo. Además, cuenta con majestuosas montañas, como la Cordillera de los Andes, que le dan un encanto especial a la
+           región. El Parque Provincial Aconcagua, ubicado en Mendoza, es el hogar de la montaña más alta de América del Sur y es
+           un destino popular para los escaladores y excursionistas.
+            <br>
+           Por otro lado, San Juan es famosa por su paisaje desértico, pero también cuenta con impresionantes formaciones
+           montañosas como la Quebrada de Zonda y la Sierra de Pie de Palo. Además, esta provincia es conocida por sus festivales,
+           como la Fiesta Nacional del Sol, donde se celebra la cultura y la historia de la región.
+            <br>
+           San Luis, por su parte, es el hogar de las Sierras Centrales, que ofrecen vistas impresionantes y senderos para
+           explorar. También cuenta con el Parque Nacional Sierra de las Quijadas, que es un destino popular para el senderismo y
+           la observación de la vida silvestre.
+        </p>
+        <!-- Contenedor del iFrame del mapa  -->
+        <div class="contenedor_mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6889798.220356265!2d-73.02081201772371!3d-32.521892461380446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9678179e207f881f%3A0x1619a4b2ff1c823!2sCuyo!5e0!3m2!1ses!2sar!4v1683498958376!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!--Texto debajo del iFrame-->
+        <p>La región de Cuyo es una tierra llena de belleza natural y cultural, con una variedad de paisajes
+        impresionantes que la hacen única en el mundo.</p>
+
+        <!--Tarjetas de los lugares Populares-->
+
+        <article class="articulo">
+            <p id="populares">Destinos</p>
+            <div class="card">
+                <div class="card-content">
+                    <span>Mendoza</span> <!--Provincia-->
+                    <h2>La Ruta del Vino</h2> <!--Lugar-->
+                    <p> <!--Descripción del lugar-->
+                       La Ruta del Vino en Mendoza es una aventura vinícola que ofrece una amplia variedad de actividades turísticas, como
+                       visitas a bodegas, degustaciones de vinos, paseos en bicicleta por los viñedos, caminatas por la montaña, paseos en
+                       globo aerostático y mucho más. Es una experiencia única para descubrir la cultura del vino argentino en un entorno
+                       hermoso y relajado, ideal para disfrutar con amigos, familiares o en pareja.
+                    </p>
+                </div>
+                <img src="imagenes/mendoza/Mendoza_Copyright_Inprotur.jpg" alt="Imagen de la tarjeta">
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <span>San Luis</span>
+                    <h2>Parque Nacional Sierra de las Quijadas</h2>
+                    <p>
+                      El Parque Nacional Sierra de las Quijadas, en San Luis, es un verdadero tesoro natural que impresiona con sus
+                      majestuosas formaciones rocosas, su biodiversidad y su tranquilidad. Los visitantes pueden disfrutar de caminatas
+                      guiadas, avistamiento de animales y recorridos en 4x4 para explorar la belleza única de este parque.
+                    </p>
+                </div>
+                <img src="imagenes/sanluis/slcard.jpg" alt="Imagen de la tarjeta">
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <span>San Juan</span>
+                    <h2>Valle de la Luna</h2>
+                    <p>
+                      El Valle de la Luna en Argentina es un destino turístico que no solo es impresionante de día, sino también por la noche.
+                      Con un cielo despejado y sin contaminación lumínica, es el lugar ideal para observar las estrellas y la Vía Láctea. Los
+                      recorridos nocturnos guiados te llevan a través del parque para disfrutar de la belleza de la naturaleza bajo la luz de
+                      la luna. Además, el museo local ofrece actividades y exhibiciones nocturnas especiales para aquellos interesados en la
+                    astronomía y la ciencia.
+                    </p>
+                </div>
+                <img src="imagenes/sanjuan/sj1.jpg" alt="Imagen de la tarjeta">
+            </div>
+        </article>
+        <form id="myForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="index.html"><img src="imagenes/logo/logoico.ico" alt="Logo ViajArg"></a>
+        </div>
+        <div class="footer-contact">
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: calle 123</li>
+                <li><i class="fas fa-phone"></i> Teléfono: 123-4567890</li>
+                <li><i class="fas fa-envelope"></i> Email: info@viajarg.com</li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="#" class="icono white"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="icono white"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="icono white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2023 ViajArg. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>
